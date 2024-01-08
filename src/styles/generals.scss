@@ -1,0 +1,31 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: blue;
+}
+
+header{
+    height: 100px;
+    background-color: white;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 200px;
+
+    .logo{
+        width: 70px;
+    }
+
+    ul{
+        display: flex;
+    
+        li{
+            list-style: none;
+            margin-right: 10px;
+        }
+    }
+    
+}
