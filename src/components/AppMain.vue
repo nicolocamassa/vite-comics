@@ -101,11 +101,16 @@ export default {
     <div class="content-row">
       <div class="container">
         <CardMovie v-for="(film, index) in films" :key='index' :film='film'/>
+
+        <div class="load-container">
+          <div class="load">LOAD MORE</div> 
+        </div>
       </div>
     </div>
   </div>
 </template>
 <style lang="scss" scoped>
+@use '../styles/partials/variables' as *;
 .content-row {
   width: 100%;
   background-color: rgb(19, 19, 19);
@@ -119,7 +124,18 @@ export default {
     flex-wrap: wrap;
     padding: 60px 0;
 
+    .load-container{
+      width: 100%;
+      display: flex;
+      justify-content: center;
 
+      .load{
+        display: inline-block;
+        background-color: $main_color;
+        padding: 20px 40px;
+        margin-top: 50px;
+      }
+    }
   }
 }
 </style>
