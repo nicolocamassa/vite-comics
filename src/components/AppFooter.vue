@@ -89,6 +89,7 @@ export default {
   background-image: url(../assets/footer-bg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  padding: 35px 0;
 
   .container {
     justify-content: space-between;
@@ -164,5 +165,6 @@ export default {
   height: 100%;
   background-image: url(../assets/dc-logo-bg.png);
   background-repeat: no-repeat;
+
 }
 </style>

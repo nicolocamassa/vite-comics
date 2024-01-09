@@ -16,7 +16,7 @@ export default {
 @use '../styles/partials/variables' as *;
 .banner{
     width: 100%;
-    height: 100px;
+    height: 140px;
     background-color: $main_color;
 }
 
