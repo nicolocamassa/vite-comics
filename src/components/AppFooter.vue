@@ -80,6 +80,8 @@ export default {
 </template>
 
 <style lang="scss" scoped>
+@use '../styles/partials/variables' as *;
+
 .footer-container {
   display: flex;
   justify-content: center;
@@ -129,7 +131,7 @@ export default {
     align-items: center;
 
     .signBtn{
-        border: 1px solid rgb(0, 128, 255);
+        border: 1px solid $main_color;
         background-color: transparent;
         padding: 10px 30px;
         color: white;
@@ -137,7 +139,7 @@ export default {
     }
 
     .social-menu{
-        color: rgb(0, 128, 255);
+        color: $main_color;
 
         ul{
           display: flex;
