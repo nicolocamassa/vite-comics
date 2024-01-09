@@ -1,6 +1,11 @@
 <script>
+import CardMovie from './CardMovie.vue';
+
 export default {
   name: "AppMain",
+  components:{
+    CardMovie
+  },
   data() {
     return {
       films: [
@@ -95,13 +100,7 @@ export default {
   <div>
     <div class="content-row">
       <div class="container">
-        <div class="card" v-for="(film, index) in films">
-          <img :src="film.thumb" alt="">
-          
-          <div class='film-title'>
-            {{ film.series }}
-          </div>
-        </div>
+        <CardMovie v-for="(film, index) in films" :key='index' :film='film'/>
       </div>
     </div>
   </div>
@@ -120,21 +119,7 @@ export default {
     flex-wrap: wrap;
     padding: 60px 0;
 
-    .card{
-      width: calc(100% / 6);
-      margin: 50px 0;
 
-      img{
-        width: 200px;
-        height: 300px;
-        margin-bottom: 10px;
-      }
-
-      .film-title{
-        text-transform: uppercase;
-        padding-right: 40px;
-      }
-    }
   }
 }
 </style>
