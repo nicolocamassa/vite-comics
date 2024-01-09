@@ -3,7 +3,6 @@ export default {
     name: 'AppHeader',
     data(){
         return{
-            
         }
     }
 }
@@ -23,7 +22,7 @@ export default {
         </header>
     </div>
 </template>
-<style lang="scss">
+<style lang="scss" scoped>
 header{
     width: 100%;
     height: 100px;
